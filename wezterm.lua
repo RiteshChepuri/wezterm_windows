@@ -24,7 +24,7 @@ local config = {
     font = wezterm.font "JetBrains Mono",
 
     keys = {
-        k.alt_key("q", k.multiple_actions(":GoToFile")),
+        k.alt_key("o", k.multiple_actions(":GoToFile")),
         k.alt_key("q", k.multiple_actions("exit")),
         k.alt_to_tmux_prefix("i", "c"),
         k.alt_to_tmux_prefix("=", "%"),
@@ -37,9 +37,9 @@ local config = {
         k.alt_to_tmux_prefix("u", "u"),
         k.alt_to_tmux_prefix("y", "y"),
         k.alt_to_tmux_prefix("i", "c"),
-        k.alt_to_tmux_prefix("1", "1"),
-        k.alt_to_tmux_prefix("2", "2"),
-        k.alt_to_tmux_prefix("3", "3"),
+        k.ctrl_to_tmux_prefix("1", "1"),
+        k.ctrl_to_tmux_prefix("2", "2"),
+        k.ctrl_to_tmux_prefix("3", "3"),
     }
 }
 
