@@ -8,7 +8,7 @@ end
 
 local config = {
     font_size = 12,
-    window_background_opacity = 0.9,
+    window_background_opacity = 0.7,
     enable_tab_bar = false,
     window_decorations = "RESIZE",
     default_domain = "WSL:Arch",
@@ -24,7 +24,7 @@ local config = {
     font = wezterm.font "JetBrains Mono",
 
     keys = {
-        k.alt_key("o", k.multiple_actions(":GoToFile")),
+        k.alt_key(";", k.multiple_actions(":GoToFile")),
         k.alt_key("q", k.multiple_actions("exit")),
         k.alt_to_tmux_prefix("i", "c"),
         k.alt_to_tmux_prefix("=", "%"),
