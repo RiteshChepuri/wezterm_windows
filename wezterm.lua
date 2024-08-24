@@ -8,14 +8,22 @@ end
 
 local config = {
     font_size = 12,
-    window_background_opacity = 0.7,
+    background = {
+        {
+            source = {
+                File = "C://Users//rites//Wallpapers/nebula.jpg"
+            },
+            horizontal_align = "Center"
+        }
+    },
     enable_tab_bar = false,
     window_decorations = "RESIZE",
     default_domain = "WSL:Arch",
     automatically_reload_config = true,
     warn_about_missing_glyphs = false,
     native_macos_fullscreen_mode = false,
-    color_scheme = "Nucolors",
+    color_scheme = "Panels (terminal.sexy)",
+    bold_brightens_ansi_colors = true,
     debug_key_events = false,
     window_close_confirmation = "NeverPrompt",
     disable_default_mouse_bindings = true,
